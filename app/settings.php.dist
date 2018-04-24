@@ -1,0 +1,24 @@
+<?php
+/**
+ * Application settings config
+ * @author Thomas Breese <thomasjbreese@gmail.com>
+ */
+return [
+    'settings' => [
+        'name' => 'Slim Template App',
+        'addContentLengthHeader' => false,
+        'determineRouteBeforeAppMiddleware' => true,
+        'displayErrorDetails' => true,
+        // database config
+        'db' => [
+            'driver'    => 'mysql',
+            'host'      => 'localhost',
+            'database'  => 'database',
+            'username'  => 'username',
+            'password'  => 'password',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+        ],
+    ],
+];
